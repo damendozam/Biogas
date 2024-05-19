@@ -25,4 +25,8 @@ Presostato sin modificar y válvula de alivio de presión:  https://amzn.to/3Ufu
 Tubo neumático y racores:  https://amzn.to/3UCLWgd
 
 
-quedo actualizado
+# Banco de pruebas calibración sensores de gas
+## Bomba de vacio
+https://articulo.mercadolibre.com.co/MCO-2207965998-bomba-electrica-intex-azul-_JM?matt_tool=70147493&matt_word=&matt_source=google&matt_campaign_id=14633851809&matt_ad_group_id=122277564930&matt_match_type=&matt_network=g&matt_device=c&matt_creative=545410559217&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=271865458&matt_product_id=MCO2207965998&matt_product_partition_id=2163484155018&matt_target_id=aud-2199636707971:pla-2163484155018&cq_src=google_ads&cq_cmp=14633851809&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gclid=Cj0KCQjwxqayBhDFARIsAANWRnSR_-6E2IsPF67Obf33ysD9fS35cblABTZvo1QI3dMpGl2bcRwtiUEaAjs6EALw_wcB
+
+## Concentración de gases
