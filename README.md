@@ -1,10 +1,10 @@
 # Materiales de construcción
 ## Sensores
-| Tipo  | Referencia |Tipo|Descripción|
-| ------------- | ------------- |-----|-----|
-| CO2   | MQ135  | Medición | Se usa para medir la calidad del aire, por lo que mediria la suma de varios gases incluyendo el Metano|
-| CH4   | MQ4  | Medición | Se usa para solo medir concentracion de Metano
-| CO2|
+| Tipo  | Referencia |Descripción|
+| ------------- | ------------- |-----|
+| CO2   | MQ135  | Se usa para medir la calidad del aire, por lo que mediria la suma de varios gases incluyendo el Metano|
+| CH4   | MQ4  | Se usa para solo medir concentracion de Metano
+| Temperatura, Humedad, Presión | TARJ BME280 | Se usa para medir temperatura y humedad para ajustar la medición de concentración de gases y de presión |
 
 ## Cargador de biogas
 Materiales utilizados para el invento:
