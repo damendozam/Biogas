@@ -22,6 +22,21 @@ x=(yy*10**(-(B*z+C*u+D)))**(1/A)
 
 disp(x)
 ```
+### MQ-4
+```
+A=-0.3532477;
+B=-0.0014940;
+C=-0.00136591;
+D=1.17718719;
+
+yy=0.95;
+z=20;
+u=65;
+
+x=(yy*10**(-(B*z+C*u+D)))**(1/A)
+
+disp(x)
+```
 
 ## Cargador de biogas
 Materiales utilizados para el invento:
