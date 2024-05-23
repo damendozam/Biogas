@@ -7,6 +7,7 @@
 | Temperatura, Humedad, Presión | TARJ BME280 | Se usa para medir temperatura y humedad para ajustar la medición de concentración de gases y de presión |
 
 ## Calibración
+### MQ-135
 ```
 A=-0.3513615;
 B=-0.0025928;
