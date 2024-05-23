@@ -6,6 +6,22 @@
 | CH4   | MQ4  | Se usa para solo medir concentracion de Metano
 | Temperatura, Humedad, Presión | TARJ BME280 | Se usa para medir temperatura y humedad para ajustar la medición de concentración de gases y de presión |
 
+## Calibración
+```
+A=-0.3513615;
+B=-0.0025928;
+C=-0.0010671;
+D=0.8343359;
+
+yy=1;
+z=20;
+u=85;
+
+x=(yy*10**(-(B*z+C*u+D)))**(1/A)
+
+disp(x)
+```
+
 ## Cargador de biogas
 Materiales utilizados para el invento:
 
