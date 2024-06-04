@@ -7,6 +7,10 @@
 | Temperatura, Humedad, Presión | TARJ BME280 | Se usa para medir temperatura y humedad para ajustar la medición de concentración de gases y de presión |
 
 ## Calibración
+### Plataforma de adquisición de datos
+MDF 40x40 https://www.homecenter.com.co/homecenter-co/product/306118/tablero-40x40-cm-mdf-25-mm-escolar/306118/
+Corte laser: Corte Laser Willows
+
 ### MQ-135
 ```
 A=-0.3513615;
