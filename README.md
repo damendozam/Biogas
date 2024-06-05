@@ -10,6 +10,7 @@
 ### Plataforma de adquisición de datos
 MDF 40x40 https://www.homecenter.com.co/homecenter-co/product/306118/tablero-40x40-cm-mdf-25-mm-escolar/306118/
 Corte laser: Corte Laser Willows
+Tornillo para unir base y tapa: https://www.homecenter.com.co/homecenter-co/product/592728/tornillo-estufa-cilindrico-tuerca-m5-x-20-mm2u/592728/
 
 ### MQ-135
 ```
