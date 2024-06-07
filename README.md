@@ -43,7 +43,7 @@ x=(yy*10**(-(B*z+C*u+D)))**(1/A)
 disp(x)
 ```
 ## Tanque de Biodigestor
-Conector tanque https://www.homecenter.com.co/homecenter-co/product/567382/conector-tanque-2-pulg-rosca-hembra-3054624/567382/?kid=goosho_1161562&shop=googleShopping&gad_source=1&gclid=CjwKCAjwvIWzBhAlEiwAHHWgvS_Hm-Bhk6XCTK44hT1dUzywJLa1yvvT7p40Bzkms4cxggeWh9VQWBoCAKMQAvD_BwE
+Conector tanque: https://www.homecenter.com.co/homecenter-co/product/567540/conector-tanque-de-1-pulg-rosca-hembra/567540/
 
 ## Cargador de biogas
 Materiales utilizados para el invento:
