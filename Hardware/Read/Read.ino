@@ -1,3 +1,7 @@
+#include <Wire.h>
+
+#include "SparkFunBME280.h"
+BME280 sensorHumTempPress; //Uses default I2C address 0x77
 
 // MQ 135
 double varAMQ135 = -0.3513615;
@@ -20,6 +24,7 @@ double varR0MQ4=0;
 void setup()
 {
   Serial.begin(9600);
+  Wire.begin();
   double varRLMQ135 = analogRead(A2);
   double varRLMQ4   = analogRead(A1); 
   double varVC      = analogRead(A0);
@@ -30,6 +35,10 @@ void setup()
   varR0MQ135 = varRSMQ135/3.6016140772527665;
   varR0MQ4   = varRSMQ4/4.4366873309786135;
 
+  
+  sensorHumTempPress.setI2CAddress(0x76); //Connect to a second sensor
+  if(sensorHumTempPress.beginI2C() == false) Serial.println("Sensor connect failed");
+
   /*Serial.println(varRLMQ135);
   Serial.println(varRLMQ4);
   Serial.println(varVC);*/
@@ -37,6 +46,13 @@ void setup()
 
 void loop()
 {
+
+  double varZMQ135 = sensorHumTempPress.readTempC();
+  double varZMQ4 = sensorHumTempPress.readTempC();
+
+  double varUMQ135 = sensorHumTempPress.readFloatHumidity();
+  double varUMQ4 = sensorHumTempPress.readFloatHumidity();
+
   double varRLMQ135 = analogRead(A2);
   double varRLMQ4   = analogRead(A1); 
   double varVC      = analogRead(A0);
@@ -45,12 +61,12 @@ void loop()
   double varRSMQ4   =  (varVC*varRL/varRLMQ4) - varRL;
 
   double varYMQ135 = varRSMQ135/varR0MQ135;  //Sensibilidad [Ohm/Ohm]
-  double varZMQ135 = 20; //Temperatura [°C]
-  double varUMQ135 = 65; //Humedad [%]
+  //double varZMQ135 = 20; //Temperatura [°C]
+  //double varUMQ135 = 65; //Humedad [%]
 
   double varYMQ4 = varRSMQ4/varR0MQ4;  //Sensibilidad [Ohm/Ohm]
-  double varZMQ4 = 20; //Temperatura [°C]
-  double varUMQ4 = 65; //Humedad [%]
+  //double varZMQ4 = 20; //Temperatura [°C]
+  //double varUMQ4 = 65; //Humedad [%]
 
    
 
@@ -63,10 +79,21 @@ void loop()
   /*Serial.print("MQ 4: ");
   Serial.println(varXMQ4);*/
 
-  Serial.print("MQ135:");
+  Serial.print(varRLMQ135*5000/1023);
+  Serial.print(",");
+  Serial.print(varRLMQ4*5000/1023);
+  Serial.print(",");
+  Serial.print(varYMQ135);
+  Serial.print(",");
+  Serial.print(varYMQ4);
+  Serial.print(",");
   Serial.print(varXMQ135);
   Serial.print(",");
-  Serial.print("MQ4:");
-  Serial.println(varXMQ4);
+  Serial.print(varXMQ4);
+  Serial.print(",");
+  Serial.print(varZMQ135);
+  Serial.print(",");
+  Serial.print(varUMQ135);
+  Serial.println();
 
 }
